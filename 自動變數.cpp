@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void fun1();
+int n=1;
+
+int main(){
+	int var1 = 1;
+	fun1();
+	var1 ++;
+	printf(" \n After 1st var++ var1 = %d \n", var1);
+	fun1();
+	var1 ++;
+	printf("\n After 2nd var++ var1 = %d \n", var1);
+	
+	return 0;
+}
+
+void fun1(){
+	auto int var1 = 50;
+	printf("\nNow, %d - time entering fun1 .... var1 = %d \n", n, var1);
+	var1++;
+	printf("\nNow, %d - time leaving fun1 .... var1 = %d \n", n, var1);
+}
+
